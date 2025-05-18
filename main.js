@@ -79,7 +79,7 @@ function calculatePercent() {
 		function updateProgress(newValue) {
 			const newPercent = Math.min((newValue / userGoal) * 100, 100).toFixed(1);
 			h4.innerHTML = `Udało Ci się odłożyć <span class="current-value">${newValue}</span> z <span class="goal-span">${userGoal}</span> euro!`;
-			h2.textContent = `${newPercent}`;
+			h2.textContent = `${newPercent} %`;
 			progressBar.style.width = `${newPercent}%`;
 		}
 
